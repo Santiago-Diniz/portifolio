@@ -368,8 +368,8 @@ main .sobre {
     display: grid;
     gap: 30px;
     text-align: center;
-    max-width: 400px;
-    height: 400px;
+    max-width: 600px;
+    height: 500px;
     background-color: #222;
     align-content: center;
     transition: 0.2s ease-in;
