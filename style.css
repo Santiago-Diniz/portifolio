@@ -289,13 +289,6 @@ main .sobre {
         display: none;
     }
 
-    .section-div {
-        background-image: url(/imagens/2023-05-21\ \(5\).png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
     header {
         justify-content: space-between;
         padding: 30px 70px;
@@ -341,22 +334,34 @@ main .sobre {
 
 /* seçao service */
 
+@media screen and (max-width: 768px) {
+    .my_services ul li {
+      max-width: 100%;
+      height: auto;
+    }
+}
+  
+    .resume_generico {
+      margin-left: 10%;
+    }
+
 .services{
     background-color: #151515;
     margin-top: -30px;
     padding: 60px;
+    
 }
 
 .my_services{
     padding: 60px;
-    color: white;  
+    color: white;
+      
 }
 
 .my_services ul {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    align-items: center;
     justify-content: center;
 }
 
@@ -366,19 +371,25 @@ main .sobre {
     position: relative;
     padding: 10px;
     display: grid;
-    gap: 30px;
     text-align: center;
-    max-width: 600px;
-    height: 500px;
     background-color: #222;
     align-content: center;
     transition: 0.2s ease-in;
+    margin-bottom: 20px;
+    width: 400px;
+    height: auto;
+    font-size: 16px;
+    gap: 30px;
 
+    
 }
 
 .my_services ul li i{
     font-size: 2.7rem;
     color: red;
+    margin-top: 40px;
+    margin-bottom: 5px;
+
 }
 
 .my_services ul li h3{
